@@ -111,7 +111,7 @@ def recursive_solve(board, row, queens, solutions):
         solutions
     """
 OAOAOA    if queens == len(board):
-        solutions.append(get_solution(board))
+    solutions.append(get_solution(board))
 OAOAOA        return (solutions)
 OAOAOA
     for c in range(len(board)):
@@ -120,9 +120,9 @@ def recursive_solve(board, row, queens, solutions):
             tmp_board[row][c] = "Q"
 OAOAOA            xout(tmp_board, row, c)
             solutions = recursive_solve(tmp_board, row + 1,
-                                        queens + 1, solutions)
+                    queens + 1, solutions)
 
-    return (solutions)
+            return (solutions)
 
 
 if __name__ == "__main__":
