@@ -1,0 +1,22 @@
+# Test Case 1: Successful Area Calculation
+calculate_area
+Expected Output: 25
+
+# Test Case 2: Invalid Type for `value` in `integer_validator`
+integer_validator
+parameter_name
+"string_value"
+Expected Output: TypeError: parameter_name must be an integer
+
+# Test Case 3: Invalid Value (<= 0) for `value` in `integer_validator`
+integer_validator
+parameter_name
+-10
+Expected Output: ValueError: parameter_name must be greater than 0
+
+# Test Case 4: Valid Value for `value` in `integer_validator`
+integer_validator
+parameter_name
+42
+Expected Output: (No output, as this is a valid input)
+
